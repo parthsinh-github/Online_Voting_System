@@ -1,0 +1,32 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0c9ee2c8;
+    text-align: center;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+}
+
+.header{
+    padding: 5px;
+    margin-bottom: 38px;
+    margin-top: 25px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+}
+#roll{
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+} 
+#loginbtn{
+    padding: 5px;
+    font-size: 15px;
+    background-color: aqua;
+    color: white;
+    border-radius: 5px;
+}
