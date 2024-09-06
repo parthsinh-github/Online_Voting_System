@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
     <title>Online Voting System - Registration</title>
 </head>
+
 <body>
-    <h1>Online Voting System</h1><hr>
+    <h1 style="background-color: black; color: white;">KUCH TOH LOG KAHENGE - </h1>
+
+
+    <h1>Online Voting System</h1>
+    <hr>
     <h3>Registration</h3>
-    <form action="#">
-        <input type="text" name="name" placeholder="Enter Name" >
-        <input type="number" name="number" placeholder="Enter Mobile Number" ><br><br>
-        <input type="password" name="password" placeholder="Enter password" >
-        <input type="password" name="cpassword" placeholder="Confirm password" ><br><br>
-        Upload image<input type="file" name="photo"><br><br>
-        Select Role<select name="role" >
-            <option value="voter">Voter</option>
-            <option value="group">Group</option>
-        </select><br><br>
-        <button>Register</button><br><br>
-        Already User ?<a href="/PROJECTS/index.html">Login here</a>
+    <form action="./API/register.php " method="post" enctype="multipart/form-data" >
+        <input type="text" name="name" placeholder="Enter Name">
+        <input type="number" name="mobile" placeholder="Enter Mobile Number"><br><br>
+        <input type="password" name="password" placeholder="Enter password">
+        <input type="password" name="cpassword" placeholder="Confirm password"><br><br>
+        <input id="address" type="text" name="address" placeholder="Enter Address"><br><br>
+        <center>
+            <div class="imagepart">
+                Upload image : <input type="file" name="photo">
+            </div>
+            <br>
+            <div class="role">
+                Select Role : <select name="role" id="select">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+        </center>
+        <br>
+        </div>
+        <div class="button">
+            <button id="btn" style="background-color: rgb(10, 132, 213);  color: white;">Register</button><br><br>
+        </div>
+        Already User ?<a href="index.html">Login here</a>
     </form>
+
 </body>
+
 </html>

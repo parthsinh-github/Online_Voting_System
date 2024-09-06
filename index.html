@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mystyle.css">
     <title>Online Voting System</title>
-
 </head>
-
 <body>
-    <div class="header">
-        <h1>Online Voting System</h1>
-        <hr>
-    </div>
-    <div class="body">
-        <form action="#">
-            <h3>Log in</h3><br>
-            <input type="number" name="number" placeholder="Enter number"><br><br>
-            <input type="password" name="password" placeholder="Enter password"><br><br>
-            <select id="roll" name="role">
-                <option value="1">Voter</option>
-                <option value="2">Group</option>
-            </select><br><br>
-            <button id="loginbtn" >Log in</button>
-            New User <a href="/PROJECTS/register.html">Register here</a>
-
-        </form>
-    </div>
+    <h1>Online Voting System</h1><hr>
+    <form action="./API/login.php" method="post">
+        <h3>Log in</h3><br>
+        <input type="number" name="mobile" id="number" placeholder="Enter number"><br><br>
+        <input type="password" name="password" id="number" placeholder="Enter password" ><br><br>
+        <select  id="dropbox" name="role">
+            <option value="1">Voter</option>
+            <option value="2">Group</option>
+        </select><br><br>
+        <button id = "loginbtn" type="submit">Log in</button><br><br>
+        New User <a href="register.html">Register here</a>
+        
+    </form>
 </body>
-
 </html>
